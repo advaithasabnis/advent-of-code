@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "advent-of-code"
+version = "0.1.0"
+description = "Advent of Code"
+authors = ["Advait Hasabnis <advait.iitb@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+click = "^7.1.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+yapf = "^0.30.0"
+ipykernel = "^5.5.0"
+isort = "^5.7.0"
+pylint = "^2.7.2"
+
+[tool.poetry.scripts]
+puzzle = "advent_of_code.puzzle:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
