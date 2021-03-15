@@ -1,8 +1,8 @@
-import click
 import os
-
 from importlib import import_module
 from time import perf_counter
+
+import click
 
 
 def read_file(filename: str) -> str:
@@ -29,17 +29,17 @@ def run_puzzle(year: int, day: int, part: int):
     try:
         input_txt = read_file(input_txt_filename).strip()
     except FileNotFoundError:
-        print(f'Error: Could not find puzzle input for {year}, day{day}, part{part}')
+        print(f'\nError: Could not find puzzle input for {year}, day{day}, part{part}')
         return
 
     try:
         module = import_module(f'advent_of_code.year{year}.day{day:02d}.part{part}')
     except ImportError:
-        print(f'Error: Could not find puzzle solution for {year}, day{day}, part{part}')
+        print(f'\nError: Could not find puzzle solution for {year}, day{day}, part{part}')
         return
 
     if not hasattr(module, 'main'):
-        print(f'Error: Could not find "main" method for puzzle {year}, day{day}, part{part}')
+        print(f'\nError: Could not find "main" method for puzzle {year}, day{day}, part{part}')
         return
 
     t0 = perf_counter()
