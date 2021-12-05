@@ -21,7 +21,7 @@ puzzle = "advent_of_code.puzzle:main"
 profile = "black"
 
 [tool.black]
-line-length = 120
+line-length = 99
 skip-string-normalization = true
 
 [build-system]

@@ -1,6 +1,6 @@
-Advent of Code
-==============
-My solutions to `Advent of Code <https://adventofcode.com/>`_ in Python. Generally, I have attempted to write efficient code that minimizes runtime (sometimes at the cost of memory and code length).
+Introduction
+============
+My solutions to `Advent of Code <https://adventofcode.com/>`_ in Python. Generally, I have only attempted to optimize code to minimize runtime if runtime was long (> 0.1s) in the first place.
 
 
 Getting Started
