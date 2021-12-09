@@ -8,7 +8,7 @@ Getting Started
 
 Prerequisites
 -------------
-You'll need Python 3.8 or above and `Poetry <https://python-poetry.org/>`_.
+You'll need Python 3.10 or above and `Poetry <https://python-poetry.org/>`_.
 
 Installing
 ----------
