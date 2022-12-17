@@ -2,7 +2,7 @@ from collections import defaultdict
 
 
 def main(text: str) -> int:
-    counter = defaultdict(int)
+    counter: dict[int, int] = defaultdict(int)
     for x in text.split('\n'):
         counter[int(x)] += 1
 
@@ -15,6 +15,8 @@ def main(text: str) -> int:
     for i in counter.keys():
         if (j := 2020 - i) in counter.keys():
             return i * j
+
+    raise ValueError("No solution found")
 
 
 _input = """

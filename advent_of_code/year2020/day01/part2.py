@@ -1,8 +1,8 @@
 from collections import defaultdict
 
 
-def main(text: str) -> int:
-    counter = defaultdict(int)
+def main(text: str) -> int | float:
+    counter: dict[int | float, int] = defaultdict(int)
     for x in text.split('\n'):
         counter[int(x)] += 1
 
@@ -17,6 +17,7 @@ def main(text: str) -> int:
             if i + j <= 2020:
                 if (k := rem - j) in counter.keys():
                     return i * j * k
+    raise ValueError("No solution found")
 
 
 _input = """
