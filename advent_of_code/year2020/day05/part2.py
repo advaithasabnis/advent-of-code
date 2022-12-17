@@ -22,11 +22,3 @@ def main(text: str) -> int:
     for seat in seat_ids:
         if (min(occupied) < seat < max(occupied)) and (seat not in occupied):
             return seat
-
-
-# # Decode all ticket strings and get the missing seat id (slower)
-# def main(text: str) -> int:
-#     seat_ids = set(decode_ticket(ticket) for ticket in text.splitlines())
-#     for seat in range(min(seat_ids), max(seat_ids) + 1):
-#         if seat not in seat_ids:
-#             return seat
