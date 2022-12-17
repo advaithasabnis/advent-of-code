@@ -15,7 +15,7 @@ def main(text: str, p: int = 25) -> int:
             return min(data[i:j]) + max(data[i:j])
         current_sum += data[j]
         j += 1
-    return None
+    raise ValueError("No solution found")
 
 
 _input = """
