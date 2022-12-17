@@ -4,8 +4,7 @@ def main(text: str) -> int:
     horizontal_pos = 0
     aim = 0
     for line in data:
-        direction, distance = line.split()
-        distance = int(distance)
+        direction, distance = (c := line.split())[0], int(c[1])
         if direction == 'forward':
             horizontal_pos += distance
             vertical_pos += aim * distance
