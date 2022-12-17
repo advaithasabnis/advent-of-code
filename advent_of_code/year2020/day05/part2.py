@@ -22,3 +22,4 @@ def main(text: str) -> int:
     for seat in seat_ids:
         if (min(occupied) < seat < max(occupied)) and (seat not in occupied):
             return seat
+    raise ValueError("No solution found")
