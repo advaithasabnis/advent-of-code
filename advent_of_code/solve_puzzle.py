@@ -1,4 +1,5 @@
 import os
+from datetime import datetime
 from importlib import import_module
 from time import perf_counter
 
@@ -53,14 +54,23 @@ def run_puzzle(year: int, day: int, part: int):
 
 @click.command()
 @click.option('--year', type=int, default=2022)
-@click.option('--day', type=int, required=True)
+@click.option('--day', type=int, default=None)
 @click.option('--part', type=int, default=None)
 def main(year: int, day: int, part: int):
-    if part is None:
-        run_puzzle(year, day, part=1)
-        run_puzzle(year, day, part=2)
+    now = datetime.now()
+    if day is None:
+        for day in range(1, 26):
+            if part is None:
+                run_puzzle(year, day, part=1)
+                run_puzzle(year, day, part=2)
+            else:
+                run_puzzle(year, day, part=part)
     else:
-        run_puzzle(year, day, part=part)
+        if part is None:
+            run_puzzle(year, day, part=1)
+            run_puzzle(year, day, part=2)
+        else:
+            run_puzzle(year, day, part=part)
 
 
 if __name__ == '__main__':
