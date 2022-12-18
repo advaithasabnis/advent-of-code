@@ -52,8 +52,8 @@ def run_puzzle(year: int, day: int, part: int):
 
 
 @click.command()
-@click.option('--year', type=int, default=2020)
-@click.option('--day', type=int, default=1)
+@click.option('--year', type=int, default=2022)
+@click.option('--day', type=int, required=True)
 @click.option('--part', type=int, default=None)
 def main(year: int, day: int, part: int):
     if part is None:

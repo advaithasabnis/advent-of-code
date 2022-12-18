@@ -16,7 +16,7 @@ black = "^21.12b0"
 mypy = "^0.991"
 
 [tool.poetry.scripts]
-puzzle = "advent_of_code.puzzle:main"
+solve_puzzle = "advent_of_code.solve_puzzle:main"
 
 [tool.isort]
 profile = "black"
