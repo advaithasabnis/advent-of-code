@@ -27,7 +27,7 @@ def run_puzzle(year: int, day: int, part: int):
         'input.txt',
     )
     try:
-        input_txt = read_file(input_txt_filename).strip()
+        input_txt = read_file(input_txt_filename).strip('\n')
     except FileNotFoundError:
         print(f'\nError: Could not find puzzle input for {year}, day{day}, part{part}')
         return
