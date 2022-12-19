@@ -22,6 +22,9 @@ mypy = "^0.991"
 solve_puzzle = "advent_of_code.solve_puzzle:main"
 download_puzzle = "advent_of_code.download_puzzle:main"
 
+[tool.poetry.group.dev.dependencies]
+black = "^22.12.0"
+
 [tool.isort]
 profile = "black"
 
