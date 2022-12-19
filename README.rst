@@ -18,6 +18,23 @@ The Python dependencies are specified in ``pyproject.toml``. To install, simply 
 
 	poetry install --no-dev
 
+Downloading the puzzles
+-------------------
+
+.. code-block::
+
+	poetry run download_puzzle [OPTIONS]
+	
+	Options:
+  		--year INTEGER		advent of code year
+		--day INTEGER		puzzle day. Downloads all if not specified
+
+Example:
+
+.. code-block::
+
+	poetry run download_puzzle --year 2022 --day 2
+
 Running the puzzles
 -------------------
 
@@ -34,4 +51,4 @@ Example:
 
 .. code-block::
 
-	poetry run solve_puzzle --year 2022 --day=2 --part=1
+	poetry run solve_puzzle --year 2022 --day 2 --part 1
