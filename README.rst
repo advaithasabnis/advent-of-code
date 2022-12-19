@@ -23,15 +23,15 @@ Running the puzzles
 
 .. code-block::
 
-	poetry run puzzle [OPTIONS]
+	poetry run solve_puzzle [OPTIONS]
 	
 	Options:
-  		--year INTEGER		advent of code year. default 2020
-		--day INTEGER		puzzle day. default 1
+  		--year INTEGER		advent of code year
+		--day INTEGER		puzzle day. Runs all days if not specified
 		--part INTEGER		part 1 or 2. Runs both if not specified
 
 Example:
 
 .. code-block::
 
-	poetry run puzzle --day=2 --part=1
+	poetry run solve_puzzle --year 2022 --day=2 --part=1
