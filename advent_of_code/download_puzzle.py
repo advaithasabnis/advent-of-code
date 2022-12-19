@@ -46,7 +46,7 @@ def extract_puzzle_description(puzzle: str) -> str:
     descriptions = []
     for html in RE_PUZZLE_DESC.findall(puzzle):
         # Convert html to markdown and append to description
-        descriptions.append(md(html))
+        descriptions.append(md(html, strip=['a']))
     return "".join(descriptions)
 
 
