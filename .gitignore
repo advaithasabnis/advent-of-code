@@ -2,3 +2,6 @@
 .vscode
 alternative/
 __pycache__/
+
+input.txt
+puzzle.md
