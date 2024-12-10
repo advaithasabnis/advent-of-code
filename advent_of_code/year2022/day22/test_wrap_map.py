@@ -1,5 +1,6 @@
 from .shared import Net
 
+
 # These are the 11 possible nets of a cube
 patterns = """
 ####

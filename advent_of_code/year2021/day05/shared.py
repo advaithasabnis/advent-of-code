@@ -1,5 +1,6 @@
 import re
 
+
 COORD_PATTERN = re.compile(r'^(\d+),(\d+) -> (\d+),(\d+)$')
 
 

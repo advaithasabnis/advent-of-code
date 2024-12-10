@@ -1,6 +1,7 @@
 import re
 from typing import NamedTuple
 
+
 RULES = re.compile(r'(^[\w\s]+?): (\d+)-(\d+) or (\d+)-(\d+)$', re.M)
 
 

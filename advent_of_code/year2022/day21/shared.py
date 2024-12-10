@@ -1,6 +1,7 @@
 import operator
 from typing import Literal
 
+
 MathOperator = Literal['+', '-', '*', '/']
 
 

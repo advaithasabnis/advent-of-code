@@ -2,6 +2,7 @@ import re
 from collections import defaultdict
 from math import sqrt
 
+
 Pose = tuple[complex, complex]
 Step = tuple[complex, int]
 

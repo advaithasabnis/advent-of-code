@@ -3,6 +3,7 @@ from collections import namedtuple
 
 from .shared import eval_infix
 
+
 Operator = namedtuple('Operator', ['calc', 'prec'])
 operator_info = {
     "+": Operator(operator.add, 0),
