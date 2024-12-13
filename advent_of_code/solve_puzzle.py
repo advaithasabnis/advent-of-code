@@ -35,8 +35,8 @@ def run_puzzle(year: int, day: int, part: int):
 
     try:
         module = import_module(f'advent_of_code.year{year}.day{day:02d}.part{part}')
-    except ImportError:
-        print(f'\nError: Could not find puzzle solution for {year}, day{day}, part{part}')
+    except ImportError as e:
+        print(f'\nError: Could not find puzzle solution for {year}, day{day}, part{part}\n', e)
         return
 
     if not hasattr(module, 'main'):
