@@ -12,8 +12,8 @@ python-dotenv = "^0.21.0"
 markdownify = "^0.11.6"
 
 [tool.poetry.scripts]
-solve_puzzle = "advent_of_code.solve_puzzle:main"
-download_puzzle = "advent_of_code.download_puzzle:main"
+solve_puzzle = "advent_of_code.scripts.solve_puzzle:main"
+download_puzzle = "advent_of_code.scripts.download_puzzle:main"
 
 [tool.poetry.group.dev.dependencies]
 black = "^22.12.0"
