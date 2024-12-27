@@ -1,6 +1,9 @@
 Introduction
 ============
-My solutions to `Advent of Code <https://adventofcode.com/>`_ in Python. Generally, I have only attempted to optimize code to minimize runtime if runtime was long (> 0.1s) in the first place.
+My solutions to `Advent of Code <https://adventofcode.com/>`_ in Python.
+My goals are to find a time efficient solution for each puzzle, to learn new Python features, and to write clean code.
+I have targeted to run each puzzle in under 100 ms. This is not always possible, but I try to optimize the solution as much as possible.
+
 
 
 Getting Started
@@ -8,7 +11,7 @@ Getting Started
 
 Prerequisites
 -------------
-You'll need Python 3.10 or above and `Poetry <https://python-poetry.org/>`_.
+You'll need Python 3.12 or above and `Poetry <https://python-poetry.org/>`_.
 
 Installing
 ----------
